@@ -50,7 +50,7 @@ start_of_word("hello", 1)
 	# for pos in 0...s.length
 	# arr.select { |a| a > 3 }
 #---------------------------------------------
-#Ah bah mes recherches
+#Ah bah mes recherches n'ont pas servie à rien
 def first_word(string)
 	string.split(" ")[0]
 	# string[0]
@@ -59,9 +59,16 @@ first_word("Hello World")
 
 #---------------------------------------------
 def titleize(title)
-	title.capitalize	
+	title.capitalize
+	every_words = title.split(" ")
+
+	# every_words[0].capitalize
+
+	every_words[1..-1].each do |word| 
+    word.capitalize!
+	end
 end
-titleize("jaws")
+titleize("plusieurs mots ici")
 
 
 
