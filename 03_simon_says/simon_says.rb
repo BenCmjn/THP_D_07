@@ -16,6 +16,7 @@ def repeat(sentence,number_of_times=2)
 	return final
 end
 #---------------------------------------------
+#Ah bah mes recherches
 def start_of_word(word, n)
 	n -= 1
 	# n = 0 # J'pensais que ça allait passé
@@ -27,7 +28,8 @@ start_of_word("hello", 1)
 #--------- Tous les bouts de codes péchés sur Google
 # qui servent à pas grand chose, en fait : ---------
 
-	# word.split("")
+	# word.split("")#----------- Ah, bah ça va servir ensuite…! 
+
 	#word.each_char { |a| n += a }
 	
 	# for n in 0..word.length
@@ -35,12 +37,10 @@ start_of_word("hello", 1)
 	# for position in 0..n
 	# 	range += pos 
 	# end
-
-	# range = word.select { |a| a < n }
-	
-	# return range
-
+####------------------------- 
 	# range = word.length
+	# range = word.select { |a| a < n }
+	# return range
 	#word [n]
 ####------------------------- 
 	# a.each_char { |c|
@@ -50,13 +50,18 @@ start_of_word("hello", 1)
 	# for pos in 0...s.length
 	# arr.select { |a| a > 3 }
 #---------------------------------------------
+#Ah bah mes recherches
 def first_word(string)
 	string.split(" ")[0]
 	# string[0]
 end
 first_word("Hello World")
 
-
+#---------------------------------------------
+def titleize(title)
+	title.capitalize	
+end
+titleize("jaws")
 
 
 
