@@ -7,4 +7,4 @@ def greet(who)
   "Hello, #{who}!"
 end
 
-puts greet("Bob")
+puts greet("Alice")
