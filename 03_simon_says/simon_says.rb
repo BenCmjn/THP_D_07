@@ -18,11 +18,12 @@ end
 #---------------------------------------------
 def start_of_word(word, n)
 	n -= 1
-	# n = 0 # J'pensais que ça allait 
-	word[0..n]
-
-	start_of_word("hello", 1)
+	# n = 0 # J'pensais que ça allait passé
+	word[0..n] 
 end
+start_of_word("hello", 1)
+# Merci Toto (@TDarrigade sur Slack)
+
 #--------- Tous les bouts de codes péchés sur Google
 # qui servent à pas grand chose, en fait : ---------
 
@@ -41,10 +42,21 @@ end
 
 	# range = word.length
 	#word [n]
-####-------------------------
+####------------------------- 
 	# a.each_char { |c|
 	#   puts c
 	# }
 
 	# for pos in 0...s.length
 	# arr.select { |a| a > 3 }
+#---------------------------------------------
+def first_word(string)
+	string.split(" ")[0]
+	# string[0]
+end
+first_word("Hello World")
+
+
+
+
+
